@@ -1,0 +1,14 @@
+<% include ./partials/Header.ejs %>
+<div class="w-full h-screen bg-zinc-700 text-white pt-1">
+    <div class="flex flex-wrap gap-2 m-6">
+        <% user.posts.forEach(function(ele){ %>
+            <div class="w-24 h-28 rounded-md bg-zinc-500">
+                <div class="w-full h-full overflow-hidden rounded-md">
+                    <img src="/images/upload/<%= ele.image %>" alt="" class="object-cover">
+                </div>
+                <h5 class="mt-2 text-sm"><%= ele.title %></h5>
+            </div>
+        <% }) %>
+    </div>
+</div>
+<% include ./partials/Footer.ejs %>

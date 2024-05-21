@@ -1,0 +1,17 @@
+<% include ./partials/Header.ejs %>
+  <div
+    class="w-full h-screen bg-purple-200 flex items-center justify-center bg-cover">
+    <div class="w-80 h-80 bg-white rounded-md">
+      <p class="text-2xl m-1 text-center leading-none tracking-tight mt-5">Welcome to Pinterest</p>
+      <p class="text-center leading-none tracking-tight text-zinc-400 font-semibold">LogIn</p>
+      <form action="/login" method="post" class="text-center">
+        <input type="text" placeholder="Full Name" name="username" class="border-2 rounded-md mx-3 my-2 text-center">
+        <input type="password" placeholder="Password" name="password" class="border-2 rounded-md mx-3 text-center">
+        <input type="submit" class=" bg-purple-200 w-[80%] rounded-full my-2 cursor-pointer" placeholder="Submit">
+      </form>
+      <a href="#" class="mx-4 py-1 inline-block font-semibold text-zinc-600">Forgotten your password?</a>
+      <p class="tracking-tight text-zinc-300 text-center text-[12px] px-9 mt-2">By continuing, you agree to Pinterest's <b class="text-zinc-500">Terms of Service</b>. Opens a new tab and acknowledge that you've read our <b class="text-zinc-500">Policy</b>.</p>
+      <a href="/register_page" class="inline-block mx-3 text-md mt-4 mb-2">Don't have a Account ?</a>
+    </div>
+  </div>
+  <% include ./partials/Footer.ejs %>
